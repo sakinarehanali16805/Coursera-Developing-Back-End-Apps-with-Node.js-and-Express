@@ -1,0 +1,15 @@
+// Task 12: Search by Author
+
+async function searchByAuthor(author) {
+  try {
+    const response = await axios.get(
+      `http://localhost:3000/api/books/author/${author}`
+    );
+    console.log("Books by Author:", response.data);
+  } catch (error) {
+    console.error("Error:", error.message);
+  }
+}
+
+// Usage
+searchByAuthor("john");

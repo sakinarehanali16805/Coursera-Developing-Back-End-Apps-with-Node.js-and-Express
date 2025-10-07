@@ -1,0 +1,16 @@
+// Task 10: Get all books – Using async callback function
+
+const axios = require("axios");
+
+function getAllBooks(callback) {
+  axios
+    .get("http://localhost:3000/api/books")
+    .then((response) => callback(null, response.data))
+    .catch((error) => callback(error, null));
+}
+
+// Usage
+getAllBooks((error, data) => {
+  if (error) console.error("Error:", error.message);
+  else console.log("Books:", data);
+});
