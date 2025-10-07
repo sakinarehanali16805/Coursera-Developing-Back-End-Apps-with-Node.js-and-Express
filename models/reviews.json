@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "bookId": 4,
+    "userId": 2,
+    "comment": "This is a great book! Highly recommend.",
+    "rating": 5
+  },
+  {
+    "id": 2,
+    "bookId": 2,
+    "userId": 1,
+    "comment": "Love the characters!",
+    "rating": 5
+  }
+]
